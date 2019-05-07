@@ -18,7 +18,7 @@ public class Facturacion {
 		if (valor >= 2000000 && cliente.getTipo().equals("J")) {
 			factura = new FacturaIva19(numeroFactura, valor);
 		} 
-		else if(valor < 2000000 && cliente.getTipo().equals("N")){
+		else if(valor >= 2000000 && cliente.getTipo().equals("N")){
 			factura = new FacturaIva16(numeroFactura, valor);
 			
 		}else{

@@ -10,10 +10,12 @@ public class AppFactura {
 		Cliente cliente = new Cliente(1036950277, "papo", "N");
 		Cliente cliente1 = new Cliente(1034580277, "alejo", "J");
 		Cliente cliente2 = new Cliente(1036936278, "pepo", "J");
+		Cliente cliente3 = new Cliente(1036478215, "Dulce", "N");
 		
 		facturacion.generarFactura(316000, cliente);
 		facturacion.generarFactura(4500000, cliente1);
 		facturacion.generarFactura(1900000, cliente2);
+		facturacion.generarFactura(2000000, cliente3);
 		
 		
 		facturacion.mostrarFacturas();
